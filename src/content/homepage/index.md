@@ -2,15 +2,15 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'An <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Astro</span> Starter <span class="text-secondary"> batteries-included</span>'
+  title: '<span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Hi</span>, my name is <span class="text-blue-500">Javier Serrano</span>'
   title_size: "text-4xl md:text-6xl"
-  content: "A fully responsive astro starter repo, ideal for simple (yet laborious) content-driven pages or landings."  
-  image: /images/logo_v5_xl_pfp.webp
+  content: "I'm an Embedded Software Developer specialized in DSP, AI and Power Electronics."  
+  image: /images/user-picture_fit.png
   buttons:
-    - label: Get the Code
-      href: "https://github.com/diego-alfadev/alfadev-astro-starter"
-      target: "_blank"
-      icon: _GitHub
+    - label: need a freelance?
+      href: "/services"
+      target: "_self"
+      icon: _ChevronDown
       addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
 
 sections:

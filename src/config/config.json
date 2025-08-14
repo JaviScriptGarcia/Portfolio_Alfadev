@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "alfadev-astro-starter",
-    "base_url": "https://astro-starter.alfadev.io",
+    "title": "Javier Serrano - Embedded Software Developer",
+    "base_url": "https://javier-serrano-portfolio.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.ico",
-    "logo": "/images/logo.png",
+    "logo": "/images/logo-new.png",
     "logo_width": "47",
     "logo_height": "47",
-    "logo_text": "alfadev-astro-starter"
+    "logo_text": "Javier Serrano"
   },
 
   "params": {
@@ -19,12 +19,11 @@
     "contact_form_action": "#",
     "copyright": "Copyright © 2023 proudly crafted by [AlfaDev](https://github.com/diego-alfadev)"
 },
-
   "metadata": {
-    "meta_author": "alfadev",
-    "meta_image": "/images/logo.png",
-    "meta_description": "alfadev-astro-starter is a starter template for Astro, the modern static site generator for the modern web.",
-    "meta_keywords": ["astro", "Astro Starter", "alfadev", "Diego Alfaro Sáez", "static site generator", "modern web", "astro template"],
-    "meta_application_name": "alfadev-astro-starter"
+    "meta_author": "Javier Serrano",
+    "meta_image": "/images/logo-new.png",
+    "meta_description": "Javier Serrano is an Embedded Software Developer specialized in DSP, AI and Power Electronics. Available for freelance projects.",
+    "meta_keywords": ["Javier Serrano", "Embedded Software Developer", "DSP", "AI", "Power Electronics", "Freelance", "Software Development", "Embedded Systems"],
+    "meta_application_name": "Javier Serrano Portfolio"
   }
 }

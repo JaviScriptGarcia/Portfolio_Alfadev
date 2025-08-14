@@ -3,6 +3,7 @@ import config from "@/config/config.json";
 import { Image } from "astro:assets";
 const { src, showText } = Astro.props;
 const {
+  logo,
   logo_text,
   logo_width,
   logo_height,
@@ -24,6 +25,14 @@ const text = logo_text;
       <Image
         class="h-9 w-auto"
         src={src}
+        alt={title}
+        width={Number(logo_width)}
+        height={Number(logo_height)}
+      />
+    ) : logo ? (
+      <Image
+        class="h-9 w-auto"
+        src={logo}
         alt={title}
         width={Number(logo_width)}
         height={Number(logo_height)}
