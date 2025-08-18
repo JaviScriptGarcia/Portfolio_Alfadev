@@ -1,6 +1,5 @@
-import type { Testimonial } from "@/components/Testimonial.astro";
-import type { Section } from "@/components/core/Section.astro";
 import type { LinkButton, PageType } from "@/content/page.types";
+import { SectionSchema, TestimonialSchema } from "@/content/schemas";
 import { defineCollection, z } from "astro:content";
 
 const zodPageConfig = z.custom<PageType>();
@@ -13,7 +12,12 @@ const pagesCollection = defineCollection({
 
 const indexSchema = z.intersection(
   z.object({
-    banner: z.custom<Section>(),
+    banner: SectionSchema,
+    sections: z.array(SectionSchema).optional(),
+    company_logos: z.any().optional(),
+    section_separator: z.any().optional(),
+    section_separator_after_logos: z.any().optional(),
+    projects: z.array(SectionSchema).optional(),
     features: z.object({
       title: z.string(),
       description: z.string(),
@@ -24,13 +28,13 @@ const indexSchema = z.intersection(
           icon: z.string(),
         }),
       ),
-    }),
-    testimonial: z.custom<Testimonial>(),
+    }).optional(),
+    testimonial: TestimonialSchema.optional(),
     call_to_action: z.object({
       title: z.string(),
       description: z.string(),
       button: z.custom<LinkButton>(),
-    }),
+    }).optional(),
   }),
   zodPageConfig,
 );
@@ -48,6 +52,8 @@ export const collections = {
   features: pagesCollection,
   homepage: indexPage,
   pages: pagesCollection,
+  services: pagesCollection,
+  projects: pagesCollection,
 };
 
 

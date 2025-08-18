@@ -28,129 +28,49 @@ sections:
         icon: _Download
         addClasses: "bg-accent text-white hover:bg-accent/80"
 
-## Section Separator
 section_separator:
+  title: "Companies I've worked with"
+
+company_logos:
+  logos:
+    - name: "Versa"
+      logo: "/images/banner/versa.png"
+      alt: "Versa Logo"
+      href: "https://versades.com/en/"
+    - name: "UPV"
+      logo: "/images/banner/UPV_Lite_Grey.png"
+      alt: "UPV Logo"
+      href: "https://www.upv.es/index-en.html"
+    - name: "Zigor"
+      logo: "/images/banner/zigor.png"
+      alt: "Zigor Logo"
+      href: "https://zigor.com/en/"
+    - name: "Intellisense"
+      logo: "/images/banner/Intellisense.png"
+      alt: "Intellisense Logo"
+      href: "https://www.intellisense.hu/"
+    - name: "Abervian"
+      logo: "/images/banner/abervian.png"
+      alt: "Intellisense Logo"
+      href: "https://www.abervian.es/"
+
+section_separator_after_logos:
   title: "Some of my recent work"
 
-## Projects Section
 projects:
-  - title: Real-Time audio DSP
-    content: "Real-time digital signal processing system for audio enhancement with low-latency performance. This project demonstrates advanced signal processing techniques implemented on embedded hardware."
-    image: /images/Vibratio.jpg
+  - title: Vibratio
+    content: "Vibratio is a startup project that consists on making a real-time reverb cancelling system for speakers. My work started with the atchitecture conception, and ended with an embedded system that can play aptX audio and run configurable DSP pipelines in real time by using a phone app. For this task an STM32H7 and Qualcomm QCC5125 were used. The DSP capabilities in ARM processors were key to achieve an efficient convolution algotihm."
+    image: /images/works/Vibratio.png
+    image_position: "left"
+  - title: DSP Specialist at Intellisense
+    content: "IntelliSense is a company focused in providing wireless sensing solutions.<br/>I had an important role developing a wireless sensing system using AI and RF. My technical tasks consisted in designing, testing and implementing DSP pipelines in the system."
+    image: /images/works/Intellisense.png
     image_position: "right"
 
-## Company Logos Banner
-company_logos:
-  title: "Companies I've worked with"
-  description: "Trusted by leading companies in embedded systems and DSP"
-  logos:
-    - name: "Company 1"
-      logo: "/images/company1-logo.png"
-      alt: "Company 1 Logo"
-    - name: "Company 2"
-      logo: "/images/company2-logo.png"
-      alt: "Company 2 Logo"
-    - name: "Company 3"
-      logo: "/images/company3-logo.png"
-      alt: "Company 3 Logo"
-    - name: "Company 4"
-      logo: "/images/company4-logo.png"
-      alt: "Company 4 Logo"
-
-
-##key features
-features:
-  title: Why <span class="text-accent">alfadev-starter</span>?
-  description: Because every content-driven page needs a lot boilerplate to initialize, and **we provide you with the tools and guidelines** needed to focus on what's important.
-  feature_list:
-    - icon: "box"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Simple
-      content: Avoid Complexity, small yet not useless. Loaded, but <b class="text-text">not overwhelming</b>.
-    - icon: "clock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Up-to-date
-      content: Using the latest version and best practices of <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwindcss</span> and <span class="text-[#e41c81] font-bold">Sass</span>
-    - icon: "search"  #icon package react-feather-icon [https://feathericons.com/]
-      title: SEO Friendly
-      content: Boost your site's visibility with <b class="text-text">built-in SEO optimizations</b>, including automatic sitemap generation using <a target='blank' href="https://docs.astro.build/es/guides/integrations-guide/sitemap/"><span class="text-accent font-bold underline">astrojs/sitemap</span></a>.
-    - icon: "plus"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Extendable
-      content: Add or change content just by <b class="text-text">editing markdown files</b>, so it stays in one place regardless of the code.
-    - icon: "coffee"  #icon package react-feather-icon [https://feathericons.com/]
-      title: "Focused"
-      content: Put you effort on what's important, not on small details. Dont worry about <span class="text-shadow-sm shadow-surface-contrast">***that damn shadow***</span>.
-    - icon: "tool"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Customizable
-      content: Every corner of the page <b class="text-text">can be easily changed</b> to fit your needs.
-    - icon: "moon"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Dark Mode Support
-      content: Fully supports ***dark theme*** with an easy-to-extend theming system.
-    - icon: "feather"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Lightweight
-      content: Fast and efficient. Every asset is optimized to ensure <b class="text-text">minimal load times</b>.
-    - icon: "layers"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Modular
-      content: Built with ***reusable components*** that simplify adding or editing sections of the page.
-    - icon: "zap"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Performance-First
-      content: Designed with <b class="text-text">best-in-class performance</b> metrics to improve the user experience.
-    - icon: "layout"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Content-Centric
-      content: Focused on delivering content seamlessly, making it ideal for <b class="text-text">portfolios, showcases, or landing pages</b>.
-    - icon: "code"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Developer-Friendly
-      content: Crafted for developers who value ***simplicity, flexibility, and modern*** tools.
-    
 
 
 
 
-#testimonial
-testimonial:
-  title: Our adopters and their clients <ins>have nice things to say</ins> about us
-  description: Or they will, once they taste a drop of **what we've built**
-  testimonial_list:
-    - author: Jhon Doe
-      organization: Example Corp
-      rating: five
-      content: "I can't believe this testimonial is autogenerated! But hey, I’d still give it <b class='text-accent'>five stars</b>!"
-    - author: Jane D. Smith
-      organization: Acme Inc.
-      rating: four
-      content: "Doesn't matter if I exist or not, this project is <b class='text-accent'>truly fantastic</b>. Highly recommend!"
-    - author: Bob A. Nonymous
-      organization: FutureTech Labs
-      rating: five
-      content: "Wow, this is so good, I’d recommend it to all my imaginary friends."
-    - author: Alice Placeholder
-      organization: Startup Ipsum
-      rating: three
-      content: "If I were real, I’d definitely complain less. But it’s still pretty good!"
-    - author: Richard Fakenham
-      organization: Lorem Ipsum Ltd.
-      rating: five
-      content: "Astounding! Even for a made-up person like me, this template <b class='text-accent'>exceeds expectations</b>."
-    - author: Emily Mockson
-      organization: Phantom Co.
-      rating: four
-      content: "No real user said this, but they should! Such a slick and modern experience."
-    - author: Alex Testworth
-      organization: AlphaBeta Agency
-      rating: five
-      content: "Best autogenerated testimonial I’ve ever seen. 10/10 would fake it again."
-    - author: Chris Placeholder
-      # avatar: "/images/users/user-8.png"
-      organization: Ghost Design Studios
-      rating: four
-      content: "You don’t have to believe me, but you should believe in this product!"
 
-
-## Call to Action
-call_to_action:
-  title: "Because we love <span class='text-accent text-shadow-[0px_5px_15px]' >Astro</span> and <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Tailwind</span>."
-  description: "Save yourself some time (and sanity). Use this template and act like you planned everything from scratch. We won't tell. **Just be sure to leave a star, please.**"
-  button: 
-    label: "Grab the Starter"
-    href: "https://github.com/diego-alfadev/alfadev-astro-starter"
-    color: accent
 
 ---

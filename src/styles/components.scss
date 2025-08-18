@@ -53,7 +53,7 @@
 }
 
 .logos-grid {
-  @apply grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center;
+  @apply flex flex-wrap justify-between gap-8 items-center;
 }
 
 .logo-item {

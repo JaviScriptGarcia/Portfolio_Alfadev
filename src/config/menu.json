@@ -5,50 +5,21 @@
       "url": "/"
     },
     {
-      "name": "Features",
-      "url": "/features"
+      "name": "Services & Skills",
+      "url": "/services"
     },
     {
-      "name": "Theme",
-      "url": "/theme"
-    },
-    {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Pages",
-      "url": "",
+      "name": "Projects",
+      "url": "/projects",
       "hasChildren": true,
       "children": [
         {
-          "name": "Changelog",
-          "url": "/changelog"
+          "name": "Vibratio",
+          "url": "/projects/vibratio"
         },
         {
-          "name": "Does not exist",
-          "url": "/does-not-exist"
-        },
-
-        {
-          "name": "Neither does this",
-          "url": "/neither-does-this"
-        },
-        {
-          "name": "Nope, not this one either",
-          "url": "/nope-not-this-one-either"
-        },
-        {
-          "name": "What about this?",
-          "url": "/what-about-this"
-        },
-        {
-          "name": "Come on, this one must exist",
-          "url": "/come-on-this-one-must-exist"
-        },
-        {
-          "name": "Do you expect this to exist?",
-          "url": "/do-you-expect-this-to-exist"
+          "name": "Speaker",
+          "url": "/projects/speaker"
         }
       ]
     }
@@ -56,12 +27,12 @@
 
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Services & Skills",
+      "url": "/services"
     },
     {
-      "name": "Changelog",
-      "url": "/changelog"
+      "name": "Home",
+      "url": "/"
     }
   ]
 }

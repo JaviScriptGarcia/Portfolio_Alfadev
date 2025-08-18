@@ -5,6 +5,7 @@ export type CompanyLogo = {
   name: string;
   logo: string;
   alt: string;
+  href?: string;
 };
 
 export type CompanyLogos = {
@@ -29,12 +30,23 @@ const { company_logos } = Astro.props;
         <div class="logos-grid">
           {company_logos.logos.map((logo) => (
             <div class="logo-item">
-              <img 
-                src={logo.logo} 
-                alt={logo.alt} 
-                class="company-logo"
-                loading="lazy"
-              />
+              {logo.href ? (
+                <a href={logo.href} target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src={logo.logo} 
+                    alt={logo.alt} 
+                    class="company-logo"
+                    loading="lazy"
+                  />
+                </a>
+              ) : (
+                <img 
+                  src={logo.logo} 
+                  alt={logo.alt} 
+                  class="company-logo"
+                  loading="lazy"
+                />
+              )}
             </div>
           ))}
         </div>

@@ -1,0 +1,7 @@
+---
+title: "Services"
+---
+
+This is the services page. More content will be added here soon.
+
+You can download my CV here: [CV](/downloads/CV.pdf). Contact info in the footer. Feel free to ask me anything!

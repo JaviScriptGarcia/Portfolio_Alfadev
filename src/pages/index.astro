@@ -10,7 +10,7 @@ import { getEntry } from "astro:content";
 
 const homepage = await getEntry("homepage", "index");
 // console.log(homepage);
-const { banner, sections, features, testimonial, company_logos, section_separator, projects } = homepage.data;
+const { banner, sections, features, testimonial, company_logos, section_separator, section_separator_after_logos, projects } = homepage.data;
 const call_to_action = homepage.data.call_to_action;
 ---
 
@@ -29,8 +29,11 @@ const call_to_action = homepage.data.call_to_action;
       </section>
     )
   }
-  <!-- section separator -->
+  <!-- company logos banner -->
   {section_separator && <SectionSeparator section_separator={section_separator} />}
+  {company_logos && <CompanyLogos company_logos={company_logos} />}
+  <!-- section separator -->
+  {section_separator_after_logos && <SectionSeparator section_separator={section_separator_after_logos} />}
   <!-- projects section -->
   {
     projects && (
@@ -41,13 +44,11 @@ const call_to_action = homepage.data.call_to_action;
       </section>
     )
   }
-  <!-- company logos banner -->
-  {company_logos && <CompanyLogos company_logos={company_logos} />}
   <!-- key features -->
-  <Features features={features} />
+  {features && <Features features={features} />}
   <!-- testimonial -->
-  <Testimonial testimonial={testimonial} />
+  {testimonial && <Testimonial testimonial={testimonial} />}
   <!-- call to action -->
-  <Cta {...call_to_action} />
+  {call_to_action && <Cta {...call_to_action} />}
   <!-- <Content /> -->
 </Base>
