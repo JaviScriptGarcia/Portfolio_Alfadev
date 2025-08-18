@@ -1,0 +1,44 @@
+---
+import { markdownify } from "@/lib/utils/textConverter";
+
+export type CompanyLogo = {
+  name: string;
+  logo: string;
+  alt: string;
+};
+
+export type CompanyLogos = {
+  title: string;
+  description: string;
+  logos: CompanyLogo[];
+};
+
+const { company_logos } = Astro.props;
+---
+
+<section class="company-logos-banner">
+  <div class="container">
+    <div class="row justify-center text-center">
+      <div class="col-8">
+        <h3 class="text-2xl font-bold text-text dark:text-text-contrast mb-4" set:html={markdownify(company_logos.title)} />
+        <p class="text-text-secondary dark:text-text-secondary mb-8" set:html={markdownify(company_logos.description)} />
+      </div>
+    </div>
+    <div class="row justify-center items-center">
+      <div class="col-12">
+        <div class="logos-grid">
+          {company_logos.logos.map((logo) => (
+            <div class="logo-item">
+              <img 
+                src={logo.logo} 
+                alt={logo.alt} 
+                class="company-logo"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 

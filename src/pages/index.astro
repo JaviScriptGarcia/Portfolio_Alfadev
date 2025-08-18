@@ -2,13 +2,15 @@
 import Section from "@/components/core/Section.astro";
 import Features from "@/components/Features.astro";
 import Testimonial from "@/components/Testimonial.astro";
+import CompanyLogos from "@/components/CompanyLogos.astro";
+import SectionSeparator from "@/components/SectionSeparator.astro";
 import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/partials/Cta.astro";
 import { getEntry } from "astro:content";
 
 const homepage = await getEntry("homepage", "index");
 // console.log(homepage);
-const { banner, sections, features, testimonial } = homepage.data;
+const { banner, sections, features, testimonial, company_logos, section_separator, projects } = homepage.data;
 const call_to_action = homepage.data.call_to_action;
 ---
 
@@ -27,6 +29,20 @@ const call_to_action = homepage.data.call_to_action;
       </section>
     )
   }
+  <!-- section separator -->
+  {section_separator && <SectionSeparator section_separator={section_separator} />}
+  <!-- projects section -->
+  {
+    projects && (
+      <section class="multi-section">
+        {projects.map((project) => (
+          <Section section={project} />
+        ))}
+      </section>
+    )
+  }
+  <!-- company logos banner -->
+  {company_logos && <CompanyLogos company_logos={company_logos} />}
   <!-- key features -->
   <Features features={features} />
   <!-- testimonial -->

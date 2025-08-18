@@ -7,28 +7,55 @@ banner:
   content: "I'm an Embedded Software Developer specialized in DSP, AI and Power Electronics."  
   image: /images/user-picture_fit.png
   buttons:
-    - label: need a freelance?
+    - label: Need a freelance?
       href: "/services"
       target: "_self"
       icon: _ChevronDown
       addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
 
 sections:
-  - title: Tired of writing the same code over and over again?
-    content: "We've all been there... Setting up the same SEO, theming, and responsive layout boilerplate again and again. Say goodbye to that! <b class='text-accent'>alfadev-astro-starter</b> lets you jump straight into creating, skipping the repetitive groundwork."
-    image: /images/tired-of-writing.webp
+  - title: What I do
+    content: "I work as a freelance for companies and teams of all sizes. I can dive into any project and technology, and play different roles in a team. My years enrolled in different tasks and companies turned me into a highly technical and creative problem-solver. <br/><br/>I am passionate on what I do, and always stay commited with my given purpose. I will always look further ahead to ease the work of my colleagues and leaders, and make communication a priority for success.<br/>"
+    image: /images/Smiling_picture.png
 
-  - title: This is not a library
-    content: It's a <b class='text-accent'>ready-to-go template</b>. No steep learning curves or dozens of new dependencies. Just the essentials to build content-driven pages with ease.<br/>If you're familiar with <span class="text-accent font-bold">Astro</span>, you are good to go.
+  - title: About my experience
+    content: "My experience was earned working on many different projects, as well as studying powerful technologies, both during my academic and working years. I am a naturally-curious person, always excited to learn more.<br/><br/>I am happy to share with you a deeper insight of my background. You can find more in this blog."
     image: /images/this-is-not-a-library.webp
+    buttons:
+      - label: "Download my CV"
+        href: "/downloads/CV.pdf"
+        target: "_blank"
+        icon: _Download
+        addClasses: "bg-accent text-white hover:bg-accent/80"
 
-  - title: Optimized out of the box
-    content: Lightweight and fast. Packed with <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwind</span> and <span class="text-[#e41c81] font-bold">Sass</span> goodness, so your pages load <b class='text-accent'>blazing fast</b>—right from the start. <br/> All the pages are configured in a way that are SEO-friendly and defined with markdown.
-    image: /images/optimized-out-of-the-box.webp
+## Section Separator
+section_separator:
+  title: "Some of my recent work"
 
-  - title: Looks great, day or night
-    content: "With <b class='text-accent'>built-in dark theme support</b>, your site will look amazing no matter what time of day your users visit. Or what their eyes prefer.<br/> <br/>Forget convoluted theming systems. alfadev-astro-starter keeps it <b class='text-accent'>simple and extensible</b>, so you can focus on your design and let the code work fori you."
-    image: /images/loogs-good.webp
+## Projects Section
+projects:
+  - title: Real-Time audio DSP
+    content: "Real-time digital signal processing system for audio enhancement with low-latency performance. This project demonstrates advanced signal processing techniques implemented on embedded hardware."
+    image: /images/Vibratio.jpg
+    image_position: "right"
+
+## Company Logos Banner
+company_logos:
+  title: "Companies I've worked with"
+  description: "Trusted by leading companies in embedded systems and DSP"
+  logos:
+    - name: "Company 1"
+      logo: "/images/company1-logo.png"
+      alt: "Company 1 Logo"
+    - name: "Company 2"
+      logo: "/images/company2-logo.png"
+      alt: "Company 2 Logo"
+    - name: "Company 3"
+      logo: "/images/company3-logo.png"
+      alt: "Company 3 Logo"
+    - name: "Company 4"
+      logo: "/images/company4-logo.png"
+      alt: "Company 4 Logo"
 
 
 ##key features

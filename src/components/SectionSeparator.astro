@@ -1,0 +1,19 @@
+---
+import { markdownify } from "@/lib/utils/textConverter";
+
+export type SectionSeparator = {
+  title: string;
+};
+
+const { section_separator } = Astro.props;
+---
+
+<section class="section-separator">
+  <div class="container">
+    <div class="separator-content">
+      <div class="separator-line"></div>
+      <h2 class="separator-title" set:html={markdownify(section_separator.title)}></h2>
+      <div class="separator-line"></div>
+    </div>
+  </div>
+</section> 

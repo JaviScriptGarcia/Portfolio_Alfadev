@@ -12,6 +12,91 @@
 
 }
 
+// Force specific layout pattern: LRLR for main sections
+.multi-section > .section:nth-child(1) .row {
+  @apply md:flex-row-reverse !important; // Left (imagen izquierda)
+}
+
+.multi-section > .section:nth-child(2) .row {
+  @apply md:flex-row !important; // Right (imagen derecha)
+}
+
+// Force specific layout pattern: LRLR for projects section
+.multi-section:nth-of-type(2) > .section:nth-child(1) .row {
+  @apply md:flex-row-reverse !important; // Left (imagen izquierda) - Projects
+}
+
+// Section separator styling
+.section-separator {
+  @apply py-16;
+}
+
+.separator-content {
+  @apply flex items-center justify-center;
+}
+
+.separator-line {
+  @apply h-px bg-gray-300 dark:bg-gray-600 flex-1 max-w-24;
+}
+
+.separator-title {
+  @apply text-2xl font-bold text-text dark:text-text-contrast mx-8 text-center;
+}
+
+.multi-section > .section:nth-child(4) .row {
+  @apply md:flex-row !important; // Right (imagen derecha) - Projects
+}
+
+// Company logos banner styling
+.company-logos-banner {
+  @apply py-16 bg-gray-50 dark:bg-surface/50;
+}
+
+.logos-grid {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center;
+}
+
+.logo-item {
+  @apply flex items-center justify-center;
+}
+
+.company-logo {
+  @apply max-h-16 max-w-32 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100;
+}
+
+// Project cards styling
+.projects {
+  @apply py-16;
+}
+
+.project-card {
+  @apply bg-white dark:bg-surface rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+}
+
+.project-image img {
+  @apply transition-transform duration-300;
+}
+
+.project-card:hover .project-image img {
+  @apply scale-105;
+}
+
+.project-content h4 {
+  @apply text-text dark:text-text-contrast;
+}
+
+.project-content p {
+  @apply text-text-secondary dark:text-text-secondary;
+}
+
+.project-technologies span {
+  @apply transition-colors duration-200;
+}
+
+.project-technologies span:hover {
+  @apply bg-accent/20;
+}
+
 // badge
 .badge {
   @apply relative top-[0.625rem] rounded-md px-[0.8rem] py-[0.45rem] text-xs font-semibold text-white;
