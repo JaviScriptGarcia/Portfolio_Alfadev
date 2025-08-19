@@ -8,7 +8,7 @@ import config from "./src/config/config.json";
 
 export default defineConfig({
   // output: "static", // opcional; static es el valor por defecto
-  site: config.site?.base_url ?? "https://tu-dominio.com",
+  site: config.site?.base_url ?? "https://javiergarciaserrano.com",
   base: config.site?.base_path ?? "/",
   trailingSlash: config.site?.trailing_slash ? "always" : "never",
   vite: { css: { preprocessorOptions: { scss: { api: "modern-compiler" } } } },
