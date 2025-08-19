@@ -4,14 +4,18 @@
   "description": "Astro + tailwindcss + react + mdx base template",
   "author": "alfadev",
   "license": "MIT",
-  "packageManager": "pnpm@9.13.2",
+  "private": true,
+  "packageManager": "npm@10",
+  "engines": { "node": ">=18.17.0" },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
+    "build:check": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "vercel-build": "astro build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
