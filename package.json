@@ -6,7 +6,9 @@
   "license": "MIT",
   "private": true,
   "packageManager": "npm@10",
-  "engines": { "node": ">=18.17.0" },
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
