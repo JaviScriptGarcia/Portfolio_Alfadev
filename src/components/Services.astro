@@ -1,0 +1,42 @@
+---
+import { markdownify } from "@/lib/utils/textConverter";
+import { Image } from "astro:assets";
+
+const { services } = Astro.props;
+const { title, description, service_list } = services;
+---
+
+<section class="section services relative">
+  <div class="container">
+    <div class="row justify-between text-center lg:text-start">
+      <div class="lg:col-7">
+        <h1 set:html={markdownify(title)} />
+      </div>
+      <div class="mt-6 lg:col-5 lg:mt-0 text-text-secondary">
+        <p set:html={markdownify(description)} />
+      </div>
+    </div>
+    
+    <div class="row mt-12">
+      {service_list.map((service: any) => (
+        <div class="col-12 md:col-6 lg:col-4 mb-8">
+          <div class="bg-surface border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:shadow-secondary/50 transition-all hover:scale-105 h-full">
+            <div class="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+              <Image
+                src={service.image}
+                alt={service.title}
+                width={300}
+                height={200}
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-text">{service.title}</h3>
+              <p class="text-text-secondary text-sm" set:html={markdownify(service.content)} />
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,12 +1,22 @@
 ---
 import Base from "@/layouts/Base.astro";
+import Services from "@/components/Services.astro";
+import Skills from "@/components/Skills.astro";
 import { getEntryBySlug } from "astro:content";
 
 const entry = await getEntryBySlug("services", "index");
 const { Content } = await entry.render();
+const { services, skills } = entry.data;
 ---
 
 <Base title={entry.data.title}>
+  <!-- Services Grid -->
+  {services && <Services services={services} />}
+  
+  <!-- Skills Section -->
+  {skills && <Skills skills={skills} />}
+  
+  <!-- Additional Content -->
   <div class="section">
     <div class="container">
       <div class="row">

@@ -20,7 +20,7 @@ sections:
 
   - title: About my experience
     content: "My experience was earned working on many different projects, as well as studying powerful technologies, both during my academic and working years. I am a naturally-curious person, always excited to learn more.<br/><br/>I am happy to share with you a deeper insight of my background. You can find more in this blog."
-    image: /images/this-is-not-a-library.webp
+    image: /images/Working.png
     buttons:
       - label: "Download my CV"
         href: "/downloads/CV.pdf"
