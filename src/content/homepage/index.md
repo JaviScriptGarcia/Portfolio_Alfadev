@@ -4,7 +4,7 @@
 banner:
   title: '<span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Hi</span>, my name is <span class="text-blue-500">Javier Serrano</span>'
   title_size: "text-4xl md:text-6xl"
-  content: "I'm an Embedded Software Developer specialized in DSP, AI and Power Electronics."  
+  content: "I'm an Electronic Engineer specialized in DSP, AI and Power Electronics."  
   image: /images/user-picture_fit.png
   buttons:
     - label: Need a freelance?
