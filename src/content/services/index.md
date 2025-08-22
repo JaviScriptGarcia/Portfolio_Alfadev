@@ -13,8 +13,8 @@ services:
       title: "Electronic design"
       content: "Hardware design, PCB layout, testing and validation of prototypes."
     - image: "/images/services/software.png"
-      title: "Software development"
-      content: "Software automation, scripting, industrial software design and integration."
+      title: "Software development + AI/ML"
+      content: "Software automation, scripting, industrial software design and integration. Deep Learning and more."
     - image: "/images/services/biquad.png"
       title: "Algorithm Development"
       content: "Custom algorithm design and optimization for high performance applications. Getting the best out of the hardware."
@@ -37,7 +37,7 @@ skills:
     - category: "Embedded Systems"
       skills: ["STM32 Cortex-M", "ESP32", "TI C2000", "FreeRTOS", "Bare-metal", "ADCs", "DMA", "UART", "I2C", "I2S", "Cache"]
     - category: "AI & Deep Learning"
-      skills: ["TensorFlow", "PyTorch", "Accelerate"]
+      skills: ["TensorFlow", "PyTorch", "Accelerate", "HuggingFace", "OpenCV"]
     - category: "Software & Tools"
       skills: ["Git", "Github", "Docker", "Apptainer", "SSH", "Linux", "Eclipse", "STM32CubeIDE", "Code Composer", "VSCode"]
     - category: "Hardware & CAD"
